@@ -21,6 +21,7 @@ public class GestiondeProyectos extends JFrame{
         vp.setVisible(true);
         Conexion c = new Conexion();
         c.conectar();
+        System.out.println("caiza");
     }
     
 }
