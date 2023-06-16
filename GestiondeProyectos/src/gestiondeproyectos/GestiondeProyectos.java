@@ -4,6 +4,7 @@
  */
 package gestiondeproyectos;
 
+import conexion.Conexion;
 import javax.swing.JFrame;
 
 /**
@@ -18,6 +19,8 @@ public class GestiondeProyectos extends JFrame{
     public static void main(String[] args) {
         VentanaPrincipal vp = new VentanaPrincipal();
         vp.setVisible(true);
+        Conexion c = new Conexion();
+        c.conectar();
     }
     
 }

@@ -20,9 +20,10 @@ public class Conexion {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conex = DriverManager.getConnection("jdbc:mysql://localhost/cuarto", "root", "");
+          //  JOptionPane.showMessageDialog(null, "Conexion exitosa");
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "En este momento no te puede conectar. Comunicate con el administrador");
+            JOptionPane.showMessageDialog(null, "En este momento no te puede conectar. Comunicate con el administrador: " + ex);
         }
         return conex;
     }
