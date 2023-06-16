@@ -4,17 +4,20 @@
  */
 package gestiondeproyectos;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author jaevi
  */
-public class GestiondeProyectos {
+public class GestiondeProyectos extends JFrame{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        VentanaPrincipal vp = new VentanaPrincipal();
+        vp.setVisible(true);
     }
     
 }
